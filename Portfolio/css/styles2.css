@@ -1,0 +1,352 @@
+/*
+Author: Aaron Jazzar
+Date: 10/18/2020
+File Name: styles2.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, div, img, ul, article, section, dl, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #89cff0;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 1.25em;
+    border-radius: 10px;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header */
+header {
+    top: 0;
+    background-color: #89cff0;
+    height: 25em;
+}
+
+h1 {
+    margin-left: 20%;
+}
+
+header img {
+    margin: 0 auto;
+    background-color: #89cff0;
+    box-shadow: 8px 8px 10px #ffff00;
+}
+
+/* Style rules for navigation area */
+nav {
+   padding-top: 1%;
+   margin-top: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: 'Francois One', sans-serif;
+    border-bottom: 3px solid #000;
+}
+
+nav li a {
+    display: inline-block;
+    color: #000;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-shadow: 5px 5px 8px #ffff00;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+}
+
+#summary {
+    background-color: lightgrey;
+}
+
+#summary ul {
+    list-style-type: none;
+}
+
+.tel-link {
+    background-color: lightgrey;
+    padding: 2%;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.tel-link a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.action {
+    color: #89cff0;
+    text-decoration: none;
+    text-shadow: 5px 5px 8px #ffff00;
+}
+
+article li:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+article li:nth-of-type(odd) {
+    background-color: #ffff00;
+}
+
+article dt:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+article dt:nth-of-type(odd) {
+    background-color: #ffff00;
+}
+
+#references {
+    border-bottom: 3px solid #000;
+    background-color: #fff;
+    padding: 1% 20%;
+}
+
+#contact {
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-email-link {
+    color: #000;
+    text-decoration: none;
+    background-color: lightgrey;
+}
+
+/* Style rules for form elements */
+
+#form {
+    margin-top: 2%;
+    padding: 2%;
+    width: 70%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: #d3d3d3;
+}
+
+/* Style rules for footer content */
+
+footer p {
+    text-align: center;
+    color: #000;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 650px), print {
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: inline-block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+    /* Tablet Viewport: Style rules for header */
+
+    header {
+        position: static;
+        float: left;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav {
+        margin: 10em 3em 0 0;
+        width: 40%;
+        float: left;
+    }
+
+    nav ul {
+        display: inline-flex;
+        float: left;
+        width: 60%;
+    }
+    nav li {
+        font-weight: bold;
+        font-size: .99em;
+    }
+
+    nav li a:hover {
+        color: #fff;
+        background-color: #000;
+    }
+
+    nav li a:active {
+        color: lightgrey;
+    }
+
+    /* Tablet Viewport: Style rules for main content */
+    main {
+        display: inline-block;        
+    }
+
+    #home {
+        padding: 1% 20%;
+        border-bottom: 3px solid #000;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 30px;
+        background-color: lightgrey;
+        max-width: 100%;
+    }
+
+    .about {
+        border-bottom: 3px solid #000;
+        background-color: #fff;
+        padding: 1% 2%;
+        text-align: left;
+    }
+
+    .about dt {
+        font-weight: bold;
+    }
+
+
+    .about dd {
+        padding: 0% 1%;
+    }
+  
+    .first, .second {
+        float: left;
+        width: 50%;
+        max-width: 100%;
+    }
+    
+    .map {
+        border: 2px solid #000;
+    }
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 40%;
+        margin-left: 40%;
+	}
+    
+
+    /* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding-left: 2%;
+    }
+
+    th {
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccc;
+   }   
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+   
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        margin: 10em 3em 0 0;
+        float: left;
+    }
+    
+    nav ul {
+        display: inline-flex;
+        float: left;
+    }
+    nav li {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    /* Desktop Viewport: Style rule for form element */
+    form {
+        width: 10em;
+    }
+}
+  
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+}
