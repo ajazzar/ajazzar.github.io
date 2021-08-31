@@ -11,10 +11,10 @@ function throwdice(){
 	 var rand4=Math.round(Math.random()*5) + 1;
 
 	 // Set Image src 
-	 document.getElementById("mydice1").src="images/d" + rand1 + ".png";
-	 document.getElementById("mydice2").src="images/d" + rand2 + ".png";
-	 document.getElementById("hisdice1").src="images/e" + rand3 + ".png";
-     document.getElementById("hisdice2").src="images/e" + rand4 + ".png";
+	 document.getElementById("mydice1").src="images3/d" + rand1 + ".png";
+	 document.getElementById("mydice2").src="images3/d" + rand2 + ".png";
+	 document.getElementById("hisdice1").src="images3/e" + rand3 + ".png";
+     document.getElementById("hisdice2").src="images3/e" + rand4 + ".png";
 
 	 // Set Image alt
 	 document.getElementById("mydice1").alt=side_alt[rand1];
@@ -30,7 +30,7 @@ function who_won(rand1,rand2,rand3,rand4){
 	 let player_points=rand1 + rand2 + 2; // player's points 
      let enemy_points=rand3 + rand4 + 2; // enemy's points 
 	 let giffy=winner(player_points,enemy_points); 
-	 document.getElementById("message").src="images/" + giffy; 
+	 document.getElementById("message").src="images3/" + giffy; 
 	 document.getElementById("message").alt=giffy;
      document.getElementById("score").value=score;
      document.getElementById("result1").innerHTML = "You rolled " +(player_points - 2)+ ".";
