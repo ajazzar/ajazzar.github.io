@@ -1,0 +1,24 @@
+/* CSS */
+
+.canvasStyle{
+    border: 1px solid #000000;
+}
+
+.padding-15{
+    padding: 15px;
+}
+
+#tblRecords{
+    border-collapse: collapse;
+}
+
+#tblRecords th, #tblRecords td{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#tblRecords th{
+    background-color: #555;
+    color: white;
+}
