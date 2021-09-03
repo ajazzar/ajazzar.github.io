@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Aaron Jazzar's Week 6 Assignment</title>
+<script>
+    function checkPhone(phone){
+     var length = 0; var checkLength = false; var message = ""; var phone;
+        while (checkLength == false)
+        {
+        if (phone.length != 13)
+        {
+            message = "The phone number must be in the form (XXX)XXX-XXXX (where X is a digit). Please try again.";
+            document.getElementById('error_msg').innerHTML = message;
+            phone = document.getElementById(phone).value;            
+        }
+        else if (phone.length == 13)
+        {
+            checkLength = true;
+            message = "good job";
+            document.getElementById('error_msg').innerHTML = message;
+        }
+        }
+    }   
+    function checkUsername(username){ 
+        var length = 0; var message2 = ""; var username;
+        username = document.getElementById(username).value;
+        if(username.length < 4)
+            {
+            message2 = "Invalid username. Please try again.";
+            document.getElementById('error_msg2').innerHTML = message2;    
+            }
+        if(username.length > 4)
+            {
+            message2 = "good job";
+            document.getElementById('error_msg2').innerHTML = message2;
+             
+            }            
+
+    }    
+    function checkPassword(password){ 
+       var message3 = ""; var password; var checkSpecial = false;
+        password = document.getElementById(password).value; 
+        wordLength = password.length;
+        for(i=1; i <= (wordLength); i++)
+        {
+            if((password.charCodeAt(i)==35)||(password.charCodeAt(i)==36)||(password.charCodeAt(i)==37))
+            {
+                checkSpecial = true;
+                message3 = "good job";
+                document.getElementById('error_msg3').innerHTML = message3;
+                break;
+            }
+        }
+            if(checkSpecial == false)
+            {
+            message3 = "Invalid password. Please try again.";
+            document.getElementById('error_msg3').innerHTML = message3; 
+            }  
+         
+    }
+</script>
+</head>
+<body>
+    <form name = "sign_in" method = "post" id = "sign_in" action = "cgi-bin/data.php">
+        <fieldset>
+            <legend><h2>Sign in Form</h2></legend>
+            <div>
+                <h2>Enter the requested information</h2>
+                <label>First Name:<br /></label>
+                <input type = "text" name = "fname" id = "fname" size = "15" value = "" />
+                <label><br/>Last Name:<br /></label>
+                <input type = "text" name = "lname" id = "lname" size = "15" value = "" />
+                <label><br/>Street Address:<br /></label>
+                <input type = "text" name = "st_address" id = "st_address" size = "30" value = "" />
+                <label><br/>City:<br /></label>
+                <input type = "text" name = "city" id = "city" size = "15" value = "" />
+                <label><br/>State:<br /></label>
+                <input type = "text" name = "state" id = "state" size = "15" value = "" />
+                <label><br/>Zip Code:<br /></label>
+                <input type = "text" name = "zcode" id = "zcode" size = "15" value = "" />
+                <label><br/>Email Address:<br /></label>
+                <input type = "text" name = "email" id = "email" size = "15" value = "" />
+                <label><br/>Phone Number:<br /></label>
+                <input type = "text" name = "phone" id = "phone" size = "15" value = "" />
+                <input type = "button" onClick = "checkPhone('phone')" value = "ok"></button>
+                <p><span id = "error_msg">&nbsp</span></p>
+                <p>Enter a username that is between 4 and 20 characters.</p>
+                <label><br/>Username:<br /></label>
+                <input type = "text" name = "username" id = "username" size = "22" value = "" />
+                <input type = "button" onClick = "checkUsername('username')" value = "ok"></button>
+                <p><span id = "error_msg2">&nbsp</span></p>
+                <p>Enter a password that contains at least one of these three characters: $ % #.</p>
+                <label><br/>Password:<br /></label>
+                <input type = "text" name = "password" id = "password" size = "22" value = "" />
+                <input type = "button" onClick = "checkPassword('password')" value = "ok"></button>
+                <p><span id = "error_msg3">&nbsp</span></p>
+                <input type = "reset" value = "reset form">
+                <input type = "submit" value = "submit form">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
