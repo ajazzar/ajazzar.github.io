@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Aaron Jazzar's Week 5 Assignment</title>
+<script>
+function getAges ()
+{
+var count1 = 0; var count2 = 0; var count3 = 0;
+var ages = 0; var children = 0; 
+
+var children = prompt("How many children have signed up?", " ");
+
+for(count = 1; count <= children; count++)
+{
+     var ages = prompt("How old is the child?", " ");
+
+
+     if ((ages >= 4) && (ages <= 7)) {
+          count1++;
+          document.getElementById("league1").innerHTML = (count1);
+          continue;
+}
+     if ((ages >= 8) && (ages <= 11)) {
+          count2++;
+          document.getElementById("league2").innerHTML = (count2);
+          continue;
+     }
+     if ((ages >= 12) && (ages <= 15)) {
+          count3++;
+          document.getElementById("league3").innerHTML = (count3);
+          continue;
+     }
+    
+     }
+}
+</script>
+</head>
+<body>
+<p><input type="button" value = "click button to enter children's ages" onclick = "getAges();" /></p>
+<p>Number of Children in Junior League:</p>
+<p id = "league1"></p>
+<p>Number of Children in Intermediate League:</p>
+<p id = "league2"></p>
+<p>Number of Children in Senior League:</p>
+<p id = "league3"></p>
+</body>
+</html>
