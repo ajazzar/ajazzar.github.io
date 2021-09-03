@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- Student Name: Aaron Jazzar 
-     File Name: template.html 
-     Date: 10/18/2020-->
+     File Name: JavaScript.html
+     Date: 09/02/2021-->
 <html lang="en">
 <head>
-    <title>My Portfolio Template</title>
+    <title>JavaScript</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +15,11 @@
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 <body>
-
+<div id="container">
     <!--Use the header area for the website name or logo-->
     <header>
         <figure>
-            <img src="images/aaron_photo.jpg" alt="Aaron's photo">
+            <img src="https://raw.githubusercontent.com/ajazzar/ajazzar.github.io/main/Portfolio/images/aaron_photo.JPG" alt="Aaron's photo">
             <figcaption><h1>Aaron Jazzar, Web Developer</h1></figcaption>
         </figure>
     </header>
@@ -28,22 +28,52 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="developer.html">Work</a></li>
-            <li><a href="references.html">References</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+            <li><a href="PHP.html">PHP</a></li>
+            <li><a href="Mobile App.html">Mobile App</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <!--Use the main area to add the main content of the webpage-->
     <main>
+        <div class="mobile">
+            <p>I made this web page in my Mobile App class to keep track of the temperatures and pressures of a Boiler.
+               In this Game, the user needs to click on the UFOs to destroy them.
+               The user clicks on the web page in order to swing the bat and hit the baseball in this game.
+                 </p>
+        </div>
+    
+
+        <div class="grid tablet-desktop">
+                    <figure>
+                        <a href="multipage.html" target="_blank"><img src="multipage.png" width="20%" height="40%" alt="Boiler App web page"></a>
+                        <figcaption>I made this web page in my Mobile App class to keep track of the temperatures and pressures of a Boiler.</figcaption>
+                    </figure>
+            
+                    <figure>
+                        <a href="home.html" target="_blank"><img src="alien.png" width="20%" height="40%" alt="Alien Game"></a>
+                        <figcaption>In this Game, the user has to click on the UFOs to destroy them.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="../Batter/home.html" target="_blank"><img src="baseball.png" width="20%" height="40%" alt="baseball and bat game"></a>
+                        <figcaption>The user clicks on the web page in order to swing the bat and hit the baseball in this game.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="blastoff.html" target="_blank"><img src="rocket.png" width="20%" height="40%" alt="Rocket Blastoff"></a>
+                        <figcaption>I created a button on a web page that can be clicked. After it is clicked, there is a countdown and then the word "blastoff!" is shown.</figcaption>
+                    </figure>
+            
+        </div>
     </main>
 
     <!--Use the footer area to add webpage footer content-->
     <footer>
         <p>email: <a href="mailto:ajazzar001@my.wilmu.edu">ajazzar001@my.wilmu.edu</a></p>
-        <p>&copy; Copyright 2020. All Rights Reserved. The information on this website is confidential.</p>
+        <p>&copy; Copyright 2021. All Rights Reserved. The information on this website is confidential.</p>
     </footer>
-
+</div>
 </body>
 </html>
