@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Week 4 Assignment by Aaron Jazzar</title>
+        <script>
+            function timedText() {
+                setTimeout(myTimeout1, 1000) 
+                setTimeout(myTimeout2, 2000) 
+                setTimeout(myTimeout3, 3000) 
+                setTimeout(myTimeout4, 4000) 
+                setTimeout(myTimeout5, 5000) 
+                setTimeout(myTimeout6, 6000) 
+                setTimeout(myTimeout7, 7000)
+            }
+            function myTimeout1() {
+                document.getElementById("demo").innerHTML = "6 seconds";
+            }
+            function myTimeout2() {
+                document.getElementById("demo").innerHTML = "5 seconds";
+            }
+            function myTimeout3() {
+                document.getElementById("demo").innerHTML = "4 seconds";
+            }
+            function myTimeout4() {
+                document.getElementById("demo").innerHTML = "3 seconds";
+            }
+            function myTimeout5() {
+                document.getElementById("demo").innerHTML = "2 seconds";
+            }
+            function myTimeout6() {
+                document.getElementById("demo").innerHTML = "1 seconds";
+            }
+            function myTimeout7() {
+                document.getElementById("demo").innerHTML = "BLASTOFF!";
+            }
+            function hello (){
+            for (var i=6; i >= 0; i--) {
+                document.writeln(i); 
+                if(i==0) document.writeln("Blastoff!");                             
+        
+            } 
+            }   
+        </script>
+    </head>
+    <body>
+        <input type="button" value="click to begin countdown" onclick="timedText()" />
+        <p id="demo">I will count down from 6 seconds to 1 second and then display the word "Blastoff" when complete.</p>
+        <input type="button"  value="click to begin countdown" onclick="hello ()" />
+        <p>This button will show the countdown all at once.</p>
+        <img src="rocket.png" alt="clipart image of a rocket"></img>
+    </body>
+</html>
