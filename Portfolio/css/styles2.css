@@ -86,7 +86,7 @@ main {
 }
 
 #summary {
-    background-color: lightgrey;
+    background-color: #fff;
 }
 
 #summary ul {
@@ -116,19 +116,19 @@ main {
 }
 
 article li:nth-of-type(even) {
-    background-color: lightgrey;
+    background-color: #fff;
 }
 
 article li:nth-of-type(odd) {
-    background-color: #ffff00;
+    background-color: #fff;
 }
 
 article dt:nth-of-type(even) {
-    background-color: lightgrey;
+    background-color: #fff;
 }
 
 article dt:nth-of-type(odd) {
-    background-color: #ffff00;
+    background-color: #ffff;
 }
 
 #references {
