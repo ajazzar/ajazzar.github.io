@@ -228,7 +228,7 @@ footer p a {
     }
 
     nav li a:active {
-        color: lightgrey;
+        color: #fff;
     }
 
     /* Tablet Viewport: Style rules for main content */
@@ -246,7 +246,7 @@ footer p a {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 30px;
-        background-color: lightgrey;
+        background-color: #fff;
         max-width: 100%;
     }
 
