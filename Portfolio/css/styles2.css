@@ -195,7 +195,7 @@ footer p a {
     }
 
     h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
         }
 
     /* Tablet Viewport: Style rules for nav area */
@@ -211,7 +211,7 @@ footer p a {
     }
     nav li {
         font-weight: bold;
-        font-size: .99em;
+        font-size: 1.5em;
     }
 
     nav li a:hover {
