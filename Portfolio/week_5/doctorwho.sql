@@ -1,0 +1,125 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 19, 2021 at 03:40 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `doctorwho`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `billing_info`
+--
+
+CREATE TABLE `billing_info` (
+  `bill_number` int(4) NOT NULL,
+  `total_paid` double(6,2) NOT NULL,
+  `date_paid` int(10) NOT NULL,
+  `insurance` varchar(20) NOT NULL,
+  `patient_id` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `medication`
+--
+
+CREATE TABLE `medication` (
+  `prescription_id` int(4) NOT NULL,
+  `med_name` varchar(30) NOT NULL,
+  `presc_date` varchar(10) NOT NULL,
+  `quantity` int(8) NOT NULL,
+  `patient_id` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `patients`
+--
+
+CREATE TABLE `patients` (
+  `patient_id` int(4) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `email_address` varchar(30) NOT NULL,
+  `birth_date` varchar(10) NOT NULL,
+  `gender` varchar(6) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `patients`
+--
+
+INSERT INTO `patients` (`patient_id`, `first_name`, `last_name`, `email_address`, `birth_date`, `gender`) VALUES
+(1, 'Aaron', 'Jazzar', 'ajazzar@mail.usf.edu', '10/23/1982', 'male'),
+(2, 'Gary', 'Swan', 'gary.swan@yahoo.com', '05/20/1950', 'male'),
+(3, 'Chen', 'Kim', 'chen.kim@myschool.edu', '06/10/1990', 'Male'),
+(4, 'Jill', 'Smith', 'jill.smith@gmail.com', '11/5/2000', 'female'),
+(5, 'Victoria', 'Vanderhoff', 'vv2@myschool.edu', '03/07/1960', 'female');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `billing_info`
+--
+ALTER TABLE `billing_info`
+  ADD PRIMARY KEY (`bill_number`);
+
+--
+-- Indexes for table `medication`
+--
+ALTER TABLE `medication`
+  ADD PRIMARY KEY (`prescription_id`);
+
+--
+-- Indexes for table `patients`
+--
+ALTER TABLE `patients`
+  ADD PRIMARY KEY (`patient_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `billing_info`
+--
+ALTER TABLE `billing_info`
+  MODIFY `bill_number` int(4) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `medication`
+--
+ALTER TABLE `medication`
+  MODIFY `prescription_id` int(4) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `patients`
+--
+ALTER TABLE `patients`
+  MODIFY `patient_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
