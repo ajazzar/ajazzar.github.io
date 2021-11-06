@@ -1,8 +1,10 @@
+/* Style rules for body */
 body {
     background-color: #fff;
     margin: 0px 100px;
     padding: 0px 100px;
 }
+/* Style rules for links */
 a:link{
     color: #000;
 }
@@ -19,11 +21,9 @@ a:active{
 header {
     background-color: #89cff0;
 }
+/* Style rules for photo and paragraphs */
 img{
     padding-left: 20px;
-}
-main{
-    background-color: #fff;
 }
 p {
     background-color: #fff;
@@ -32,7 +32,7 @@ p {
     width: 100%;
     font-size: 16px;
 }
-
+/* Style rules for headers */
 h1{
  font-size: 32px; 
 }
@@ -44,9 +44,10 @@ h2{
 h3{
     font-size: 18px;
 }
+/* Style rules to align text to the center and to add a light gray background */
 p, h1, h2, h3{
     text-align: center;
 }
 footer, p, main{
-    background-color: #fff;
+    background-color: #D3D3D3;
 }
