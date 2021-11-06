@@ -4,16 +4,16 @@ body {
     padding: 0px 100px;
 }
 a:link{
-    color: #black;
+    color: #000;
 }
 a:visited{
-    color: #purple;
+    color: #800080;
 }
 a:hover{
-    color: #black
+    color: #000;
 }
 a:active{
-    color: #red;
+    color: #FF0000;
 }
 /* Style rules for header */
 header {
