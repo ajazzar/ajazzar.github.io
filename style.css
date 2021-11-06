@@ -4,20 +4,19 @@ body {
     padding: 0px 100px;
 }
 a:link{
-    color: black;
+    color: #black;
 }
 a:visited{
-    color: purple;
+    color: #purple;
 }
 a:hover{
-    color: white
+    color: #white
 }
 a:active{
-    color: red;
+    color: #red;
 }
 /* Style rules for header */
 header {
-    margin-top: 0px;
     background-color: #89cff0;
 }
 main{
@@ -45,6 +44,6 @@ h3{
 p, h1, h2, h3{
     text-align: center;
 }
-footer{
-    background-color: #89cff0;
+footer, p, main{
+    background-color: #fff;
 }
