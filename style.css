@@ -19,6 +19,9 @@ a:active{
 header {
     background-color: #89cff0;
 }
+img{
+    padding-left: 20px;
+}
 main{
     background-color: #fff;
 }
