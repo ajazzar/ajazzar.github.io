@@ -3,10 +3,17 @@ body {
     margin: 0px 100px;
     padding: 0px 100px;
 }
-img {
-    display: block;
-    border-radius: 10px;
-    border: 5px solid #555;
+a:link{
+    color: black;
+}
+a:visited{
+    color: yellow;
+}
+a:hover{
+    color: white
+}
+a:active{
+    color: red;
 }
 /* Style rules for header */
 header {
@@ -37,4 +44,7 @@ h3{
 }
 p, h1, h2, h3{
     text-align: center;
+}
+footer{
+    background-color: #89cff0;
 }
