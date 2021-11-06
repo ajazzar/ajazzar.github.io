@@ -12,7 +12,9 @@ header {
     margin-top: 0px;
     background-color: #89cff0;
 }
-
+main{
+    background-color: #fff;
+}
 p {
     background-color: #fff;
     padding: 2%;
