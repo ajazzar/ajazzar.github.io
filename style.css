@@ -53,6 +53,6 @@ footer{
 }
 /* Style rules to cover the remaining space on the web page */
 header, main, footer{
-    padding-right: 80px;
+    padding: 0px 80px;
 }
 
