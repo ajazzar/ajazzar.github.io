@@ -32,7 +32,7 @@ p {
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
 }
-/* Style rules for font size */
+/* Style rules for header font size */
 h1{
  font-size: 32px; 
 }
@@ -44,9 +44,7 @@ h2{
 h3{
     font-size: 18px;
 }
-p{
-    font-size: 13px;
-}
+
 /* Style rules to align text to the center and to add a light blue background */
 ul, ol, p, h1, h2, h3{
     text-align: center;
