@@ -53,7 +53,7 @@ header, footer{
 header, footer{
     padding: 25px 80px;
 }
-main{
+main, hr{
     padding: 0px 80px;
 }
 
