@@ -1,4 +1,7 @@
-    
+body{
+    margin: 0;
+    padding: 0;
+}
 /* Style rules for links */
 a:link{
     color: #000;
@@ -44,12 +47,10 @@ h3{
     font-size: 18px;
 }
 /* Style rules to align text to the center and to add a light gray background */
-p, h1, h2, h3{
+a, p, h1, h2, h3{
     text-align: center;
-    margin: 0px 100px;
-    padding: 0px 100px;
 }
-header, main, footer{
+header, footer{
     background-color: #89cff0;
 }
 
