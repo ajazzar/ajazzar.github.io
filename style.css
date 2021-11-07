@@ -1,3 +1,7 @@
+/* Style rule for list items */
+li{
+    padding-bottom: 10px;
+}
 /* Style rules for links */
 a:link{
     color: #000;
