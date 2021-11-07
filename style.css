@@ -55,4 +55,4 @@ footer{
 }
 /* Style rules to extend the page contents to the same width as the viewport */
 header, main, footer{
-    width: 120vw;
+    width: 200vw;
