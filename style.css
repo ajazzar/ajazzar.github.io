@@ -51,7 +51,7 @@ header, footer{
 
 /* Style rules to cover the remaining space on the web page */
 header, footer{
-    padding: 25px 80px 0px 80px;
+    padding: 25px 80px;
 }
 main{
     padding: 0px 80px;
