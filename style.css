@@ -12,9 +12,6 @@ a:active{
     color: #FF0000;
 }
 
-li > a{
-    padding-bottom: 10px;
-}
 /* Style rules for header */
 header {
     padding-top: 25px;
