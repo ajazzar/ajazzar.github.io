@@ -13,7 +13,7 @@ a:active{
 }
 /* Style rules for header */
 header {
-    width: 110%;
+    width: 120%;
     padding-top: 25px;
 }
 /* Style rules for image and paragraphs */
@@ -52,6 +52,6 @@ header, footer{
 }
 /* Style rules for footer */
 footer{ 
-    width: 110%;
+    width: 120%;
     padding-bottom: 15px;
 }
