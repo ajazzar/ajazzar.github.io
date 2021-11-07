@@ -16,10 +16,6 @@ a:active{
     color: #FF0000;
 }
 
-/* Style rules for header */
-header {
-    padding-top: 25px;
-}
 /* Style rules for image and paragraphs */
 img{
   display: block;
@@ -52,12 +48,9 @@ ul, ol, p, h1, h2, h3{
 header, footer{
     background-color: #89cff0;
 }
-/* Style rules for footer */
-footer{ 
-    padding-bottom: 15px;
-}
+
 /* Style rules to cover the remaining space on the web page */
 header, main, footer{
-    padding: 0px 80px;
+    padding: 25px 80px 0px 80px;
 }
 
