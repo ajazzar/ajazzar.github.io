@@ -18,6 +18,7 @@ a:active{
 /* Style rules for header */
 header {
     height: 30%;
+    margin-top: -15px;
 }
 /* Style rules for photo and paragraphs */
 img{
@@ -52,8 +53,9 @@ ul, ol, p, h1, h2, h3{
 }
 header, footer{
     background-color: #89cff0;
+    
 }
-
 footer{ 
     height: 10%;
+    margin-bottom: -15px;
 }
