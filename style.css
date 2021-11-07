@@ -50,5 +50,8 @@ header, footer{
 footer{ 
     padding-bottom: 15px;
 }
-
+/* Style rules to cover the remaining space on the web page */
+header, main, footer{
+    padding-right: 80px;
+}
 
