@@ -47,7 +47,7 @@ h3{
     font-size: 18px;
 }
 /* Style rules to align text to the center and to add a light gray background */
-a, p, h1, h2, h3{
+ul, ol, p, h1, h2, h3{
     text-align: center;
 }
 header, footer{
