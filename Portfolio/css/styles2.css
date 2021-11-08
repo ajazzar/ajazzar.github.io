@@ -4,38 +4,63 @@ Date: 10/18/2020
 File Name: styles2.css
 */
 
-/* CSS Reset */
-body, header, nav, main, footer, h1, h2, div, img, ul, article, section, dl, figure, figcaption {
-    margin: 0;
-    padding: 0;
-    border: 0;
+/* Style rule for list items */
+li{
+    padding-bottom: 10px;
+}
+/* Style rules for links */
+a:link{
+    color: #000;
+}
+a:visited{
+    color: #800080;
+}
+a:hover{
+    color: #000;
+}
+a:active{
+    color: #FF0000;
 }
 
-/* Style rules for body and images */
-body {
+/* Style rules for image and paragraphs */
+img{
+  display: block;
+  width: 20%;
+  height: 20%;
+  margin: auto;
+}
+p {
+    padding: 2%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+/* Style rules for header font size */
+h1{
+ font-size: 32px; 
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+/* Style rules to align text to the center and to add a light blue background */
+ul, ol, p, h1, h2, h3{
+    text-align: center;
+}
+header, footer{
     background-color: #89cff0;
-    max-width: 100%;
 }
 
-img {
-    display: block;
-    border-radius: 10px;
-    border: 5px solid #555;
+/* Style rules to cover the remaining space on the web page */
+header, footer{
+    padding: 25px 80px;
 }
-
-/* Style rules for mobile viewport */
-
-/* Style rules for header */
-header {
-    top: 0;
-    background-color: #89cff0;
-}
-
-header img {
-    margin: 0 auto;
-    background-color: #89cff0;
-    box-shadow: 8px 8px 10px #ffff00;
-}
+main{
+    padding: 0px 80px;
 
 /* Style rules for navigation area */
 nav {
@@ -60,7 +85,6 @@ nav li a {
     text-decoration: none;
     text-shadow: 5px 5px 8px #ffff00;
 }
-
 /* Show mobile class, hide tablet-desktop class */
 .mobile {
     display: block;
@@ -142,37 +166,6 @@ article dt:nth-of-type(odd) {
     background-color: lightgrey;
 }
 
-/* Style rules for form elements */
-
-#form {
-    margin-top: 2%;
-    padding: 2%;
-    width: 70%;
-}
-
-form #submit {
-    margin: 0 auto;
-    border: none;
-    display: block;
-    padding: 2%;
-    font-size: 1em;
-    border-radius: 10px;
-    background-color: #d3d3d3;
-}
-
-/* Style rules for footer content */
-
-footer p {
-    text-align: center;
-    color: #000;
-    padding: 0 1em;
-}
-
-footer p a {
-    color: #000;
-    text-decoration: none;
-}
-
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
 
@@ -235,6 +228,7 @@ footer p a {
 
 
     .grid {
+
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 30px;
@@ -242,21 +236,6 @@ footer p a {
         max-width: 100%;
     }
 
-    .about {
-        border-bottom: 3px solid #000;
-        background-color: #fff;
-        padding: 1% 2%;
-        text-align: left;
-    }
-
-    .about dt {
-        font-weight: bold;
-    }
-
-
-    .about dd {
-        padding: 0% 1%;
-    }
   
     .first, .second {
         float: left;
@@ -264,9 +243,6 @@ footer p a {
         max-width: 100%;
     }
     
-    .map {
-        border: 2px solid #000;
-    }
 
     /* Tablet Viewport: Style rule for form element */
     form {
