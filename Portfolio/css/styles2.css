@@ -88,7 +88,23 @@ nav li a {
     text-shadow: 5px 5px 8px #ffff00;
 }
 
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
 
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+}
 
 
 
@@ -98,8 +114,10 @@ nav li a {
     /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
     .tablet-desktop {
         display: inline-block;
-    }
-
+}
+    .mobile{
+	    display: none;
+}
 
     /* Tablet Viewport: Style rules for header */
 
