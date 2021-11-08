@@ -54,12 +54,9 @@ ul, ol, p, h2, h3{
 }
 header, footer{
     background-color: #89cff0;
+    width: 120vw;
 }
 
-/* Style rules to cover the remaining space on the web page */
-footer{
-    padding: 25px 80px;
-}
 main{
     padding: 0px 80px;
     text-align: center;
