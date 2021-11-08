@@ -37,6 +37,7 @@ p {
 /* Style rules for header font size */
 h1{
  font-size: 32px; 
+ float: inherit;
 }
 
 h2{
