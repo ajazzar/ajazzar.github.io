@@ -61,6 +61,8 @@ header, footer{
 }
 main{
     padding: 0px 80px;
+    text-align: center;
+}
 
 /* Style rules for navigation area */
 nav {
