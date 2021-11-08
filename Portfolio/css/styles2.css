@@ -125,6 +125,7 @@ main {
         position: static;
         float: left;
         color: #000;
+	width: -moz-available;
     }
 
     h1 {
