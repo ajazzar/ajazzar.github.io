@@ -213,5 +213,13 @@ main {
         color: #000;
         background-color: #fff;
     }
-  
+  /* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+}
   
