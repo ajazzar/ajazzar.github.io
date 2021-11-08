@@ -88,3 +88,116 @@ nav li a {
     text-shadow: 5px 5px 8px #ffff00;
 }
 
+
+
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 650px), print {
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: inline-block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+    /* Tablet Viewport: Style rules for header */
+
+    header {
+        position: static;
+        float: left;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav {
+        width: 40%;
+        float: left;
+    }
+
+    nav ul {
+        display: inline-flex;
+        float: left;
+        width: 60%;
+    }
+    nav li {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    nav li a:hover {
+        color: #fff;
+        background-color: #000;
+    }
+
+    nav li a:active {
+        color: #fff;
+    }
+
+    /* Tablet Viewport: Style rules for main content */
+    main {
+        display: inline-block;        
+    }
+
+    #home {
+        padding: 1% 20%;
+        border-bottom: 3px solid #000;
+    }
+
+
+    .grid {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 30px;
+        background-color: #fff;
+        max-width: 100%;
+    }
+
+  
+    .first, .second {
+        float: left;
+        width: 50%;
+        max-width: 100%;
+    }
+    
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 40%;
+        margin-left: 40%;
+	}
+    
+
+    
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+   
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        float: left;
+    }
+    
+    nav ul {
+        display: inline-flex;
+        float: left;
+    }
+    nav li {
+        font-weight: bold;
+    }
+
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+  
+  
