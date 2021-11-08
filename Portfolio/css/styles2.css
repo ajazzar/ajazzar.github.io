@@ -131,6 +131,7 @@ main {
 
     h1 {
         font-size: 1.5em;
+	float: inherit;
         }
 
     /* Tablet Viewport: Style rules for nav area */
