@@ -89,19 +89,17 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  justify-content: space-between;
+  align-items: stretch;
 }
 
 form label {
   font-weight: bold;
-  align-self: flex-start;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
-  align-self: flex-end;
 }
 
 form button {
