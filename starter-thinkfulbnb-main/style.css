@@ -54,7 +54,7 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 0 20px;
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ header {
   color: #fff;
 }
 
-header nav ul {
+header nav ul{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,9 +89,13 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  align-items: stretch;
 }
 
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 form label {
   font-weight: bold;
 }
@@ -185,23 +189,35 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
-
 form {
+  border: 2px solid #ff385c;
+  padding: 10px;
   display: flex;
   flex-direction: row;
-  width: 100%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  padding: 5px;
 }
 form label {
   font-weight: bold;
-  align-self: flex-start;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
-  align-self: flex-end;
+  width: 100%;
 }
 
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  width: 100%;
+}
 
 }
