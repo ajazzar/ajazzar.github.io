@@ -53,10 +53,6 @@ header, footer{
     width: 120vw;
 }
 
-main{
-    padding: 0px 80px;
-}
-
 /* Style rules for navigation area */
 nav {
    padding-top: 1%;
