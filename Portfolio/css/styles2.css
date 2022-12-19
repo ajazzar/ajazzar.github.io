@@ -45,7 +45,7 @@ h3{
 }
 
 /* Style rules to align text to the center and to add a light blue background */
-ul, ol, p, h2, h3{
+ p, h2, h3{
     text-align: center;
 }
 header, footer{
