@@ -1,13 +1,9 @@
 /*
 Author: Aaron Jazzar
-Date: 10/18/2020
+Date: 12/19/2022
 File Name: styles2.css
 */
 
-/* Style rule for list items */
-li{
-    padding-bottom: 10px;
-}
 /* Style rules for links */
 a:link{
     color: #000;
